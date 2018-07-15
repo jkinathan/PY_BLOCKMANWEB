@@ -7,10 +7,10 @@
 #to your python application to run at the start
 import time
 from datetime import datetime as dt #importing dattime and using sgort form as dt
-hosts_path = "/etc/hosts"
+hosts_path = "/etc/hosts" #use this on linux machine and for windows use windows: c:\Windows\System32\drivers\etc\hosts
 redirect = "127.0.0.1"
 website_list = ["www.facebook.com","facebook.com","www.youtube.com"]
-hosts_temp = "hosts"
+hosts_temp = "hosts" #incase you are still testing and donot want to implement it immediately use hosts_temp in the place of hosts_path .. i have attached the sample hosts_temp file to get your code up and running
 while True:
     if dt(dt.now().year,dt.now().month,dt.now().day,8) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,16):
         print("Your working HOURS...")
